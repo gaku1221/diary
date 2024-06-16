@@ -6,6 +6,16 @@
     <title>大学生活</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const today = new Date();
+            const yyyy = today.getFullYear();
+            const mm = String(today.getMonth() + 1).padStart(2, '0');
+            const dd = String(today.getDate()).padStart(2, '0');
+            const formattedDate = `${yyyy}年${mm}月${dd}日`;
+            document.getElementById('current-date').innerText = formattedDate;
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -21,11 +31,19 @@
     </header>
     <main>
         <article>
+            <h2 id="current-date"></h2>
+            <p>　こん晩から冷房をつけた。窓を開けてもちっとも涼しくならなくて、じわじわ汗が止まらなかったんだよね。<br>
+                　フィルター掃除してないし、冷房つけ始めると、秋までお世話になるからだいぶ渋ってたけど、暑くてなにも手がつかないから思い切った。まあ、フィルターは起きたら掃除しよう。<br>
+                　明日はダンボールを捨てる日で、これを逃すと次は二週間後になる。もう4週間も滞納しているから、明日こそはゴミに出したい。<br>
+                　いままで日付を手入力してたんだけど、今日の投稿からjavascriptを使って、クライアント側から更新すると自動で入力するようにした。うまくいってるかな。
+            </p>
+        </article>
+        <article>
             <h2>2024年6月16日</h2>
             <p>　macbookを買ったのが、この日記をはじめたきっかけだった。<br>
                 　前のパソコンを買った時に、一度自分のホームページを作ったことがあった。<br>
                 　その時は、図書館で借りたhtmlとcssの本とにらめっこで、いまみたいにコピペできないからとても苦労した。<br>
-                　この日記は、コーデックのほとんどをchatGPTにやってもらった。7年前はおお仕事だったのにね。<br>
+                　この日記は、プログラミングのほとんどをchatGPTにやってもらった。7年前は大しごとだったのにね。<br>
                 　でも、案外覚えていることがあって、ヘッダの色を変えたり、行間空けたりは自分でできた。<br>
                 　なんだかんだ、htmlとcssさわっててよかったかも!なんて。<br>
             </p>
